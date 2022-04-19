@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Botão com css</title>
+  </head>
+  <style>
+    .botao01 {
+      background: #67ab36;
+      border: 1px solid #3f6a20;
+      border-radius: 10px;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 2px 7px rgba(0, 0, 0, 0.2);
+      color: #f7f7ff;
+      display: block;
+      font-family: 'Trebuchet MS';
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 25px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 5px 15px;
+      position: relative;
+      width: 150px;
+    }
+    .botao01:before {
+      border: 1px solid #3f6a20;
+      border-radius: 10px;
+      content: '';
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      padding: 5px;
+      position: absolute;
+    }
+
+    .botao01:after {
+      border-radius: 4px;
+      content: '';
+      bottom: 15px;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      position: absolute;
+    }
+    .botao01:hover {
+      background: #7dd83b;
+      border: 1px solid #4b7e26;
+      border-radius: 10px;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 2px 7px rgba(0, 0, 0, 0.2);
+      color: #f7f7ff;
+      display: block;
+      font-family: 'Trebuchet MS';
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 25px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 5px 15px;
+      position: relative;
+      width: 150px;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <button onclick="myFunction()" href="#" class="botao01">Pesquisar</button>
+    </div>
+    <script>
+      function myFunction() {
+        alert('ME DA UMA CHANCE =P <3')
+      }
+    </script>
+  </body>
+</html>

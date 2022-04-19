@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="content-language" content="pt"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>CMS</title>
+		<link href="http://www.buscaonibus.com.br/site2013/css/bootstrap.min.css" rel="stylesheet" media="screen"></link>
+		<link type="text/css" href="http://www.buscaonibus.com.br/css/admin/style.css" rel="stylesheet" /> 
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <nav class="bo-navbar navbar navbar-default navbar-static-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/cms">CMS</a>
+      </div>
+    </nav>
+		
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Nome</th>
+          <th>Estado</th>
+          <th>Visível</th>
+        </tr>
+        <tr>
+          <th>
+            <input type="text" id="txtColuna1" placeholder="Filtra por Chave" />
+          </th>
+          <th>
+            <input type="text" id="filterByName" placeholder="Filtra pelo Nome" />
+          </th>
+          <th>
+            <input type="text" id="filterByState" placeholder="Filtra pelo Estado" />
+          </th>
+          <th>
+            <input type="text" id="filterByVisible" placeholder="Filtra por Visivel" />
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>key_abadiania</td>
+          <td>Abadiânia</td>
+          <td>GO</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_belem</td>
+          <td>Belém</td>
+          <td>PA</td>
+          <td class="bo_visible_false">False</td>
+        </tr>
+        <tr>
+          <td>key_belo-horizonte</td>
+          <td>Belo Horizonte</td>
+          <td>MG</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_campinas</td>
+          <td>Campinas</td>
+          <td>SP</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_diamantina</td>
+          <td>Diamantina</td>
+          <td>MG</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_foz-do-iguacu</td>
+          <td>Foz do Iguaçu</td>
+          <td>PR</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_fraiburgo</td>
+          <td>Fraiburgo</td>
+          <td>SC</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_franca</td>
+          <td>Franca</td>
+          <td>SP</td>
+          <td class="bo_visible_false">False</td>
+        </tr>
+        <tr>
+          <td>key_goiania</td>
+          <td>Goiânia</td>
+          <td>GO</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_novo-hamburgo</td>
+          <td>Novo Hamburgo</td>
+          <td>RS</td>
+          <td class="bo_visible_false">False</td>
+        </tr>
+        <tr>
+          <td>key_rio-de-janeiro</td>
+          <td>Rio de Janeiro</td>
+          <td>RJ</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_sao-paulo</td>
+          <td>São Paulo</td>
+          <td>SP</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+        <tr>
+          <td>key_sao-sebastiao</td>
+          <td>São Sebastião</td>
+          <td><strong>Falta</strong></td>
+          <td class="bo_visible_false">False</td>
+        </tr>
+        <tr>
+          <td>key_volta-redonda</td>
+          <td>Volta Redonda</td>
+          <td>RJ</td>
+          <td class="bo_visible_true">True</td>
+        </tr>
+      </tbody>
+    </table>
+	</div>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <style type="text/css">
+      .bo_visible_true {
+        background-color: #ccffcc !important;
+      }
+
+      .bo_visible_false {
+        background-color: #ffcccc !important;
+      }
+    </style>
+  </body>
+</html>
